@@ -5,11 +5,12 @@ class NhAskCli < Formula
   sha256 "738cfc99eaadcbf7d2bb0b523903ac8cc0b4e776362a339669af7c9908e8e980"
   license "MIT"
 
+  depends_on "python-setuptools" => :build
   depends_on "python@3.12"
 
   def install
     system Formula["python@3.12"].opt_bin/"python3.12", "-m", "pip", "install",
-           *std_pip_args, "."
+           "--no-build-isolation", *std_pip_args, "."
   end
 
   test do
