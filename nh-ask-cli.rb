@@ -3,8 +3,8 @@ class NhAskCli < Formula
 
   desc "AI CLI tool for natural language interaction with LLMs"
   homepage "https://github.com/nimahejazi/ask"
-  url "https://github.com/nimahejazi/ask/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "06fbb91f36aaeba5f85db0803ec05d1e64337de9b6889e5b90f1561763fe0f81"
+  url "https://github.com/nimahejazi/ask/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "67bc6425693a0cdd0f2b798644817282e65b28e186abc7d9d524e1b284d34a94"
   license "MIT"
 
   depends_on "python-setuptools" => :build
